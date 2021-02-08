@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox</title>
+    <meta name="viewport" content="width=device-width, inilial-scale=1">
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+
+    <link rel="stylesheet" media="all and (max-width: 980px)" href="../media2.css">
+</head>
+<body>
+<div class="dws-wrapper">
+    <div class="topnav" id="myTopnav">
+        <a class="hidden" href="#">MENU</a>
+        <a href="/">HOME</a>
+        <a href="/sport">SPORT</a>
+        <a href="/campgrounds">BLOG</a>
+        <a href="#">PAGES</a>
+        <a href="/contact">CONTACT</a>
+
+        <% if(!currentUser){ %>
+            <a class="right-top" href="/login"> LOGIN </a>
+            <a href="/register"> SIGN UP </a>
+        <% } else{ %>
+            <a class="right-top2" href="/logout"> LOGOUT</a>
+            <a href="#">SIGNED IN AS: <%= currentUser.username %></a>
+        <% } %>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="top-logo">
+        <img id="logo" src="../logo.png">
+        <img id="logo-sec" src="../header_image.png">
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+    <section class="show">
+        <div class="show">
+            <img src="<%= campground.image %>">
+            <p><i class="fa fa-eye" aria-hidden="true">
+                    <%= campground.views %>
+                </i></p>
+            <h2><%= campground.name %></h2>
+            <p style="font-size: 17px; margin-bottom: 50px;"><%= campground.description %></p>
+        </div>
+        <div class="well">
+            <div class="comment-show">
+                <a href="/campgrounds/<%= campground._id %>/comments/new">Add New Comments</a>
+                <% campground.comments.forEach(function(comment){ %>
+                    <div class="show-comment">
+                        <strong><%= comment.author.username %>:</strong>
+                        <span class="pull-right">5 minutes ago</span>
+                        <p style="font-size: 17px;"><%= comment.text %></p>
+                        <% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
+                            <a style="border: black; border-radius: 4px; background-color: grey; color: white; padding: 3px; padding-left: 10px; padding-right: 10px; margin: 10px; text-decoration: none; font-size: 15px;"
+                               href="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>/edit">Edit</a>
+                            <form style="margin: 10px;" id="delete-form"
+                                  action="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>?_method=DELETE"
+                                  method="POST">
+                                <input class="" type="submit" value="Delete">
+                            </form>
+                        <% } %>
+                        <hr>
+                    </div>
+            </div>
+            <% }) %>
+        </div>
+    </section>
+
+    <%- include("../partials/footer") %>
+

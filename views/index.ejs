@@ -1,0 +1,57 @@
+<%- include("./partials/header") %>
+
+    <div class="container">
+            <section class="blog">
+             <% campgrounds.forEach(function(campground){ %> 
+              <div class="blog-box">
+               <a style="text-align: center; text-decoration: none;" href="/campgrounds/<%= campground._id %>" class=""> <img src="<%= campground.image %>"></a>
+               <a style="text-align: center; text-decoration: none;" href="/campgrounds/<%= campground._id %>" class=""> <h2><%= campground.name %></h2></a>
+               <time style=" text-align: left; margin-bottom: 20px;" datetime="2013-10-25">— October 25, 2013</time>
+               <p class="p-blog"><%= campground.description.substring(0, 65) + "..." %></p>
+              </div>
+             <% }); %>
+            </section>    
+    </div>
+
+<%- include("./partials/footer") %>
+
+
+ 
+
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

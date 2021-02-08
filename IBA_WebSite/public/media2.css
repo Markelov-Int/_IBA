@@ -1,0 +1,1251 @@
+.header {
+    width: 100%;
+}
+
+
+.header img {
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+
+}
+
+
+.top menu li a {
+    font-size: 15px;
+}
+
+.container {
+    width: 100%;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+
+
+.content {
+    margin-left: 0;
+}
+
+@media all and (max-width: 820px) {
+    .sidebar img {
+        text-align: center;
+               
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .content img {
+        width: 100%
+    }
+
+    .box-text {
+        flex-direction: column;
+    }
+
+    .box-text img {
+        margin: 0;
+        height: 150px;
+    }
+
+
+}
+
+
+@media all and (max-width: 680px) {
+    .sidebar img {
+        
+        margin-top: 5px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .content img {
+        width: 100%
+    }
+
+    .box-text {
+        flex-direction: column;
+    }
+
+    .box-text img {
+        margin: 0;
+        height: 150px;
+    }
+}
+
+
+/* Стили для второго слайдера */
+@media (max-width: 600px), (max-device-width: 600px) {
+    .content {
+        width: 100%; /* для адаптивного плавного изменение ширины блока (контент подстраивается под это ширину)*/
+        overflow: hidden; /* это на всякий случай чтобы не было той проблемы о которой ты мне писал*/
+    }
+
+  
+
+    .header img.adv {
+        padding-top: 10px;
+        width: 90%
+        text-align: center;
+    }
+
+    .header img#logo {
+        width: 250px;
+        height: 60px;
+        padding-top: 10px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+
+    /*класический скелет слайдера*/
+    .arrow-slider {
+        overflow: hidden; /*скрытия невмещающихся слайдов*/
+        width: 344px; /*задание ширины блока видимых слайдов*/
+        margin: 0 auto; /*центруем этот блок*/
+
+    }
+
+    .arrow-slider .slider-wrapper {
+        display: flex; /*даём возможность слайдам вылезать за блок arrow-slider */
+    }
+
+    .arrow-slider .box-text-second {
+        min-width: 25%; /*задаём ширину одного слайда*/
+    }
+
+   
+
+
+    .footer {
+        padding: 10px 0 5px; /*здесь просто подкоректировал чтобы нормально текст отображало*/
+    }
+}
+
+
+@media (max-width: 600px), (max-device-width: 520px) {
+    .content {
+        width: 100%; /* для адаптивного плавного изменение ширины блока (контент подстраивается под это ширину)*/
+        overflow: hidden; /* это на всякий случай чтобы не было той проблемы о которой ты мне писал*/
+    }
+
+   
+
+    .sidebar {
+        width: 100%; /* для адаптивного плавного изменение ширины блока (контент подстраивается под это ширину)*/
+        overflow: hidden; /* это на всякий случай чтобы не было той проблемы о которой ты мне писал*/
+    }
+
+    .sidebar .second-sidebar {
+        width: 100%; /* для адаптивного плавного изменение ширины блока (контент подстраивается под это ширину)*/
+        overflow: hidden; /* это на всякий случай чтобы не было той проблемы о которой ты мне писал*/
+    }
+
+
+
+   
+    .sidebar .box-text2-first {
+        width: 90%;
+        border: none;
+    }
+
+    .sidebar .box-text-first2 {
+        width: 90%;
+        border: none;
+    }
+
+    .box-text-first2 img.small {
+        width: 100px;
+        height: 100px;
+    }
+
+    .second-sidebar .box-text-first {
+        width: 90%
+    }
+
+    .second-sidebar .box-text-first2 {
+        width: 90%
+    }
+
+
+    /*класический скелет слайдера*/
+    .arrow-slider {
+        overflow: hidden; /*скрытия невмещающихся слайдов*/
+        width: 344px; /*задание ширины блока видимых слайдов*/
+        margin: 0 auto; /*центруем этот блок*/
+
+    }
+
+    .arrow-slider .slider-wrapper {
+        display: flex;
+        flex-wrap: nowrap; /*даём возможность слайдам вылезать за блок arrow-slider */
+    }
+
+    .arrow-slider .box-text-second {
+        padding-left: -10px;
+        min-width: 70px; /*задаём ширину одного слайда*/
+    }
+
+    .arrow-slider .box-text-second:first-child {
+        margin-left: 0px; /* убираем отспут у первого слайда*/
+    }
+
+
+    .top-box .box-text-second2 {
+        width: 90%;
+        border: none;
+    }
+
+    .box-text-second2 img.small {
+        width: 119px;
+        height: 120px;
+    }
+
+    .box-text-second2 img.xsmall {
+        width: 55px;
+        height: 55px;
+    }
+
+    .content .box-text-second2 p.left-p-border {
+        border-bottom: 2px solid #dfdfdf;
+        padding-bottom: 10px;
+    }
+
+
+    .box-text-second3 {
+        width: 90%;
+
+    }
+
+    .footer {
+        padding: 10px 0 5px; /*здесь просто подкоректировал чтобы нормально текст отображало*/
+    }
+}
+
+@media (max-width: 390px), (max-device-width: 600px) {
+
+    .header {
+        margin-left: -15px;
+        margin-right: -5px;
+    }
+
+    .header.responsive {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .header img#logo {
+        width: 100%;
+    }
+
+    .header img {
+        margin-right: 20px;
+    }
+
+    .arrow-slider .box-text-second {
+
+        margin-left: 20px;
+    }
+
+    .content .box-text-second2 {
+        border: none;
+        margin-left: 50px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .content .box-text-second2 img.fashion-main {
+        width: 105%;
+        height: 250px;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+    .content .box-text-second2 img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header img {
+        width: 80%;
+        margin-left: 45px;
+    }
+
+    .header img#logo {
+        width: 250px;
+        height: 70px;
+        margin: 10px;
+        margin-bottom: 15px;
+        margin-left: 90px;
+    }
+
+    .arrow-slider {
+        width: 300px;
+    }
+
+    .sidebar .box-text-first2 img {
+        width: 40%;
+        height: 100px;
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+
+    .sidebar .box-text-first img {
+        width: 320px;
+        height: 340px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    .sidebar .box-text-first2 .text p {
+        margin-left: -10px;
+    }
+
+    .sidebar .box-text-first2 .text h2 {
+        margin-left: -10px;
+    }
+
+    .sidebar .box-text-first {
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    .slider-wrapper {
+        padding-bottom: 20px;
+        border-bottom: 2px solid #dfdfdf;
+    }
+
+    .content .box-text-second {
+        margin-left: 90px;
+
+    }
+
+    .content .box-text-second:first-child {
+        margin-left: 40px;
+    }
+
+    .slider-wrapper {
+        margin-left: 0px;
+    }
+
+    .box-text-first2 .text img {
+        margin-left: 20px;
+    }
+
+    .content .box-text-second3 img {
+        width: 300px;
+        text-align: center;
+        margin-left: 30px;
+
+    }
+
+    .content .box-text-second3 h2 {
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .content .box-text-second3 time {
+
+        margin-left: 120px;
+    }
+
+    .box-text-second3 img {
+        width: 200px;
+        margin-right: 0;
+    }
+
+
+    body img.main {
+        width: 320px;
+        height: 340px;
+        object-fit: cover;
+
+        margin-left: 10px;
+    }
+
+    .sidebar {
+        border: none;
+    }
+
+    .content {
+        border: none;
+    }
+
+    p.footer {
+        width: 100%;
+        font-size: 15px;
+        text-align: left
+
+
+    }
+
+    .footer {
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .sidebar .box-text-first2 h2.first2 {
+       font-size: 25px;
+       margin-top: 0px;
+       margin-left: 10px;
+    }
+
+
+}
+
+
+@media (max-width: 390px), (max-device-width: 390px) {
+    .arrow-slider .box-text-second {
+        min-width: 25% !important;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header img {
+        width: 88%;
+        margin-right: 20px;
+    }
+
+    .header img#logo {
+        width: 200px;
+        height: 70px;
+        margin: 10px;
+        margin-bottom: 15px;
+        margin-left: 70px;
+    }
+
+    .sidebar img .main {
+        width: 50px;
+    }
+
+
+    .arrow-slider {
+        width: 270px !important;
+    }
+
+    .sidebar .box-text-first2 img {
+        width: 40%;
+        height: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .sidebar .box-text-first2 .text p {
+      margin-left: -10px;
+     
+    }
+
+    .sidebar .box-text-first2 .text h2 {
+        font-size: 20px;
+        margin-left: -10px;
+    }
+
+    .sidebar .box-text-first {
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    .slider-wrapper {
+        padding-bottom: 20px;
+        border-bottom: 2px solid #dfdfdf;
+    }
+
+    .box-text-first2 .text img {
+        margin-left: 20px;
+    }
+
+    .content .box-text-second3 img {
+        width: 300px;
+        text-align: center;
+
+    }
+
+}
+
+
+@media (max-width: 600px), (max-device-width: 480px) {
+
+
+
+
+}
+
+
+@media (max-width: 600px), (max-device-width: 1000px) {
+
+    .bottom-text {
+        margin-top: 50px;
+        font-size: 15px;
+        margin-left: -10px;
+    }
+
+    section.edit-comment input {
+        margin-left: 40px;
+    }
+
+    section.edit-comment button {
+        margin-left: 120px;
+        margin-bottom: 20px;
+    }
+
+    section.edit-comment a {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+
+    section.show img {
+        margin-left: 25px;
+    }
+
+    section.show h2 {
+        margin-left: 25px;
+    }
+
+    section.show p {
+        margin-left: 25px;
+    }
+
+    section.show {
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+}
+
+    section.new-comment {
+
+        margin-left: -10px;
+    }
+
+    section.new-comment input {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    section.new-comment button {
+        margin-left: 120px;
+        margin-bottom: 30px;
+    }
+
+    section.new-comment a {
+        margin-left: 40px;
+        margin-bottom: 30px
+    }
+
+    section.new-comment div.com-show h2 {
+        margin-left: 90px;
+        margin-top: 40px;
+    }
+
+    section.new-comment div.com-show input {
+        margin-left: 50px;
+    }
+
+    section.new-comment div.com-show button {
+        margin-left: 120px;
+        margin-bottom: 20px;
+    }
+
+    section.new-comment div.com-show a {
+        margin-left: 50px;
+    }
+
+    div.comment-show a {
+    margin-left: 0;
+    margin-bottom: 40px;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+
+    }
+
+    div.show-comment strong {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    div.show-comment span {
+        font-size: 15px;
+    }
+
+    div.show-comment p {
+        font-size: 13px;
+    }
+
+
+    section.edit-comment h1 {
+        margin-left: 90px;
+        margin-top: 40px;
+    }
+
+    section.edit-comment div.com-show input {
+        margin-left: 50px;
+    }
+
+    section.edit-comment div.com-show button {
+        margin-left: 120px;
+        margin-bottom: 20px;
+    }
+
+    section.edit-comment div.com-show a {
+        margin-left: 50px;
+    }
+
+
+   
+
+    section.blog {
+        margin-left: 0px;
+        margin-right: 20px;
+        flex-direction: column;
+    }
+
+    .blog-box img {
+
+        height: 300px;
+        margin-left: 20px;
+    }
+
+    .blog-box h2 {
+        font-size: 33px;
+        margin-left: 10px;
+    }
+
+
+    .blog-box time {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .blog-box p.p-blog {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .blog-box animation: {
+        display: none;
+    }
+
+    ul.top-menu {
+        width: 332px;
+        margin-right: 0px;
+    }
+
+    ul.log li:last-child {
+        display: none;
+    }
+
+    ul.top-menu li a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    body {
+        width: 100%;
+
+    }
+
+    .container {
+        margin-left: 0px;
+        border-bottom: none;
+    }
+
+
+    .sidebar h3.NHL {
+        
+        margin-bottom: 5px;
+        font-size: 17px;
+    }
+
+    .content h3.fashin {
+        text-align: center;
+    }
+
+
+    .sidebar .box-text-first {
+     margin-top: 20px;
+     border-bottom: 2px solid #292929;
+     margin-bottom: 20px;
+     width: 86%;
+
+    }
+     .sidebar .box-text-first2 {
+     margin-left: 20px;
+    margin-right: 0;
+    }
+
+    .sidebar .box-text2-first {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 7px;
+
+
+    }
+
+    .sidebar .box-text-first h2 {
+        font-size: 28px;
+
+    }
+
+    .sidebar .box-text-first p {
+        margin-right: 50px;
+        font-size: 17px;
+
+    }
+
+    .sidebar .box-text-first img {
+       margin-left: 8px;
+       height: 100%;
+       width: 102%;
+       padding-left: 0px;
+    }
+
+    img.main {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+
+    .sidebar .box-text-first2 img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+
+    }
+
+
+    
+
+    .sidebar .box-text-first p.left-p {
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0;
+        font-size: 15px;
+    }
+
+    .sidebar .box-text-first2 p.left-p {
+        font-size: 15px;
+
+    }
+
+    .sidebar .box-text-first2 p.left-tennis {
+        font-size: 15px;
+        margin-right: 0px;
+
+    }
+
+    .sidebar {
+        display: flex;
+        border: none;
+    }
+
+    .content {
+        margin-left: -10px;
+        width: 100%;
+        border: none;
+    }
+
+
+    .content .box-text-second {
+        margin-left: 110px;
+    }
+
+    .content .box-text-second2 {
+        width: 90%;
+        margin-left: 20px;
+        border: none;
+
+    }
+
+    .content .box-text-second2 img {
+        width: 50%;
+        height: 410px;
+        object-fit: cover;
+        margin-right: 40px;
+
+    }
+
+    .content .box-text-second2 h2 {
+
+    }
+
+    .content .box-text-second2 p {
+        font-size: 14
+    }
+
+    .content .box-text-second3 img {
+        width: 97;
+        object-fit: cover;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .content .box-text-second3 h2 {
+        font-size: 33px;
+        margin-left: 0px;
+    }
+
+    .content .box-text-second3 time {
+        font-size: 26px;
+        margin-left: 0px;
+    }
+
+    .contant h2 {
+        font-size: 24px;
+    }
+
+    .box-text-second2 .text img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .box-text-second2 .text h2.first4 {
+      font-size: 21px;
+    }
+
+
+    .box-text-second2 .text p {
+        font-size: 14px;
+
+    }
+
+    .box-text-second2 .text .text-bottom h2.first2 {
+        font-size: 17px;
+
+    }
+
+
+    .box-text-second2 .text .text-bottom {
+        padding-bottom: 225px;
+
+    }
+
+    .box-text-second2 .text img {
+        width: 70px;
+        height: 70px;
+        margin-right: 7px;
+    }
+
+    .box-text-second2 .text img.interview {
+        width: 80px;
+        height: 80px;
+        margin-right: 7px;
+        margin-top: 0px;
+    }
+
+    .content .box-text-second2 h2 {
+        font-size: 24px;
+    }
+
+    .content .box-text-second2 h2.h2-fasion {
+        font-size: 17px;
+    }
+
+    .content .box-text-second2 h2.first2 {
+        font-size: 20px;
+    }
+
+    .content .box-text-second2 p.right-sportnew {
+        font-size: 15px;
+        margin-top: 10px;
+        
+    }
+
+    .content .box-text-second2 p.left-p {
+        font-size: 15px;
+       
+    }
+
+    .content .box-text-second2 time {
+        font-size: 13px;
+    }
+
+    .content .box-text-second3 {
+        margin-left: 20px;
+        margin-top: -50px;
+        width: 97%;
+        flex-direction: column;
+        text-align: left;
+    }
+
+   
+
+
+    .slider-wrapper .box-text-second h2 {
+        font-size: 21px;
+
+
+    }
+
+    .slider-wrapper time {
+        font-size: 11px;
+    }
+
+    .slider-wrapper .box-text-second {
+        margin-left: 10px;
+    }
+
+    .slider-wrapper {
+      justify-content: center;  
+      border: none;
+       
+    }
+
+    .slider-wrapper .box-text-second p {
+        font-size: 17px;
+
+    }
+
+    .arrow-slider .box-text-second img {
+       
+    }
+
+    .top-logo img#logo-sec {
+        height: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+        display: none;
+
+    }
+
+    .container .blog-box {
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .container .blog-box img {
+        object-fit: cover;
+        width: 100%;
+        height: 82%;
+    }
+
+    .top-logo img#logo {
+    width: 58%;
+    /* margin-left: 74px; */
+    margin-right: 0px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+    body img.main {
+        width: 94%;
+        height: 100%;
+        padding-left: 0px;
+        
+    }
+
+    time.time {
+        margin-top: 20px;
+    }
+
+    h3.fashion {
+        margin-top: 30px;
+    }
+
+    p.footer {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer {
+        height: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+
+    }
+
+
+    
+
+   
+
+ 
+
+    .sidebar img {
+        width: 94%;
+        height: 100%;
+        margin-left: 0px;
+        object-fit: cover;
+    }
+
+    .sidebar h2 {
+        font-size: 28px;
+        
+    }
+    
+    .section_first_top{
+    display: flex;
+    flex-direction: column;
+    }
+    .box-top{
+    display: flex;
+    flex-direction: column;
+    }
+    .content .box-text-second2 .text {
+    margin-right: -40px;
+    }
+    section.nhl-news {
+    display: flex;
+    flex-direction: column;
+    }
+    .sidebar .box-text-first2 h2.first2 {
+    font-size: 21px;
+}
+    .sidebar .box-text-first2 h2.first3 {
+    font-size: 21px;
+} 
+
+    .box-text-second2-sport {
+    border-bottom: 2px solid #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-right: 0;
+    margin-left: 20px;
+    border-right: none;
+    }
+    .box-text-second2-sport img {
+    width: 106%;
+    }
+     .login{
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+
+    }
+    input.txtb {
+        margin: auto;
+        width: 70%;
+        margin-bottom: 40px;
+    }
+    button.logbtn {
+        margin: auto;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+
+}
+    @media screen and (max-width: 650px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+       
+         .topnav-user a{
+            display: none;
+            float: left;
+        }
+    }
+
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    @media screen and (max-width: 650px) {
+        .topnav.responsive {
+            position: relative;
+        }
+        .topnav-user.responsive {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .topnav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        .topnav a.hidden {
+            display: block;
+        }
+        
+      
+    }
+
+
+@media (max-width: 600px){
+
+.sidebar h2 {
+        font-size: 21px;
+        margin-left: 0px;
+    }
+.sidebar .box-text-first2 img {
+       margin-left: -10px;
+   }
+.sidebar img {
+      margin-left: 0px;
+   }
+ .sidebar .box-text2-first {
+     border-bottom: 2px solid #292929;
+     margin-bottom: 30px;
+     margin-left: 10px;
+   }
+ .content .box-text-second2 .text{
+    width: 100%;
+ }
+ .box-text-second2{
+    width: 100%;
+ }
+ .content .box-text-second3 h2 {
+    font-size: 20px;
+    margin-left: 0px;
+ }
+ .content .box-text-second3 time {
+    font-size: 20px;
+    margin-left: 0px;
+ }
+ .arrow-slider .box-text-second img {
+    width: 80px;
+    height: 80px;
+}
+.content .box-text-second2 {
+    width: 90%;
+    margin-left: 20px;
+    border: none;
+}
+.content .box-text-second3 img {
+    width: 97%;
+    object-fit: cover;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+    .slider-wrapper .box-text-second h2 {
+        font-size: 20px;
+    }
+
+    .slider-wrapper time {
+        font-size: 11px;
+    }
+
+    .slider-wrapper .box-text-second {
+        display: flex;
+    }
+    .slider-wrapper .box-text-second img{
+       width: 85px;
+       height: 85px;
+    }
+    .slider-wrapper .box-text-second:first-child {
+        margin-left: 5px;
+    }
+
+    .slider-wrapper {
+      justify-content: center;  
+      border: none;
+       
+    }
+    .sidebar img {
+        width: 94%;
+        height: 100%;
+        margin-left: 0px;
+        object-fit: cover;
+    }
+    .sidebar .box-text-first img {
+    margin-left: 1px;
+    height: 100%;
+    width: 109%;
+    padding-left: 0px;
+}
+ .sidebar .box-text-first h2 {
+        font-size: 21px;
+
+    }
+    .sidebar .box-text-first2 h2.first2 {
+    font-size: 20px;
+}
+.sidebar .box-text-first2 h2.first3 {
+    font-size: 20px;
+}
+
+    .top-logo img#logo {
+    width: 80%;
+    margin-left: 34px;
+    margin-right: 0px;
+}
+  .blog-box h2 {
+        font-size: 19px;
+        margin-left: 10px;
+    }
+    .blog-box p.p-blog {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .box-text-second2-sport {
+    border-bottom: 2px solid #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-right: 0;
+    margin-left: 20px;
+    }
+    .box-text-second2-sport img{
+    width: 100%;
+    }
+    .login{
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    input.txtb {
+        margin-left: 20px;
+        width: 85%;
+    }
+    button.logbtn {
+        margin: auto;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+ 
+}
+
+
+
+
+

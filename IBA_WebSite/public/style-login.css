@@ -1,0 +1,98 @@
+
+
+.login {
+    display: flex;
+    width: 40%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #292929;
+    border-radius: 10px;
+    padding: 0;
+    margin: 10px;
+    height: 100%;
+    margin: auto;
+    margin-top: 50px;
+    }
+
+
+.login-form h1{
+  margin-bottom: 40px;
+}
+
+.txtb{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+
+input.txtb {
+  display: flex;
+   justify-content: center;
+  font-size: 15px;
+  color: #333;
+  width: 40%;
+  padding: 0 5px;
+  height: 35px;
+  border: 2px solid #adadad;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 20px;
+ 
+}
+
+.txtb span::before{
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+
+.txtb span::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(120deg,#3498db,#8e44ad);
+  transition: .5s;
+}
+
+.focus + span::before{
+  top: -5px;
+}
+.focus + span::after{
+  width: 100%;
+}
+
+ button.logbtn{
+  width: 40%;
+  height: 43px;
+  margin: auto;
+  margin-bottom: 20px;
+  background: linear-gradient(120deg,green, #008e96);
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+  border-radius: 15px;
+}
+
+.logbtn:hover{
+  background-position: right;
+}
+
+.bottom-text{
+  margin-top: 30px;
+   margin-left: 13px;
+  text-align: center;
+  font-size: 17px;
+}
+
+a.sign-up{
+  font-size: 20px;
+}
